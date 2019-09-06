@@ -1,3 +1,13 @@
+select students.studentid, students.studentlastname, students.studentfirstname, 
+classes.classid, classes.datetime, classes.roomid 
+
+from students, classes, enrollments
+
+where students.studentid = enrollments.studentid and
+
+enrollments.classid = classes.classid
+
+
 INSERT INTO students (studentid, studentlastname, studentfirstname)  
 VALUES ('1','Smith','John');
 
