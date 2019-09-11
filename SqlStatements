@@ -10,3 +10,8 @@ INSERT INTO students( studentid, studentlastname, studentfirstname, programgroup
 INSERT INTO students( studentid, studentlastname, studentfirstname, programgroup) VALUES ( 'A1010', 'Archer', 'Jonathan', 'Group 1');
 INSERT INTO students( studentid, studentlastname, studentfirstname, programgroup) VALUES ( 'A1011', 'Archer', 'Jonathan', 'Group 1');
 INSERT INTO students( studentid, studentlastname, studentfirstname, programgroup) VALUES ( 'A1012', 'Archer', 'Jonathan', 'Group 1');
+
+
+select students.studentid, groups.classid 
+from students, groups
+where students.programgroup = groups.programgroup
